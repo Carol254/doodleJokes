@@ -1,6 +1,8 @@
 async function getJoke(){
     const apiUrl = 'https://icanhazdadjoke.com';
 
+    const jokeItemEl = document.getElementById('jokeItem');
+
 try {
     const response = await fetch(apiUrl, {
         headers: {
@@ -16,6 +18,9 @@ try {
     const joke = data.joke;
 
     console.log(joke);
+
+    jokeItemEl.innerHTML = joke;
+
 } catch (e) {
     console.log(e);
 }

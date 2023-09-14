@@ -41,7 +41,7 @@ html {
     border-radius: 5px;
     box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
     position: absolute;
-    top:50%;
+    top:40%;
     left:80%;
   }
   .jokeBtn:hover{
@@ -54,4 +54,10 @@ html {
   .jokeBtn:disabled {
     cursor: default;
     filter: brightness(30%);
+  }
+  #jokeItem{
+    color: #ffff;
+    position: absolute;
+    top:60%;
+    left:80%;
   }
