@@ -24,6 +24,34 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Cover the entire container */
-    z-index: -1; /* Place it behind other content */
+    z-index: -1;
+    position: relative; /* Place it behind other content */
   }
   
+  .jokeBtn{
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+    background: #ffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top:50%;
+    left:80%;
+  }
+  .jokeBtn:hover{
+    filter: brightness(95%);
+  }
+  .jokeBtn:active {
+    transform: scale(0.98);
+  }
+  
+  .jokeBtn:disabled {
+    cursor: default;
+    filter: brightness(30%);
+  }
