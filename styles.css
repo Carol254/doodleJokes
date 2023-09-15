@@ -4,7 +4,8 @@ html {
   
   body {
     margin: 0;
-    /* background-color: black; */
+    padding: 0;
+    background-color: black;
   }
   
   .container {
@@ -14,7 +15,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Hide overflowing video content */
+    overflow: hidden; 
   }
   
   #video-bg {
@@ -23,9 +24,9 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cover the entire container */
+    object-fit: cover; 
     z-index: -1;
-    position: relative; /* Place it behind other content */
+    position: relative; 
   }
   
   .jokeBtn{
@@ -60,4 +61,52 @@ html {
     position: absolute;
     top:60%;
     left:80%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .container {
+      background-position: center;
+      background-size: contain;
+      display: inline-block;
+      flex-direction: column;
+    }
+    .container::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .container {
+      -ms-overflow-style: none;  
+      scrollbar-width: none;
+    }
+  
+    button {
+      box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    #video-bg {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      .jokeBtn{
+        left: 50%;
+        top:90%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+
+      }
+
+      #jokeItem{
+        left: 50%;
+        top:30%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        color: #ff3482;
+      }
   }
