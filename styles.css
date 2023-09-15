@@ -97,7 +97,7 @@ html {
       .jokeBtn{
         left: 50%;
         top:90%;
-        transform: translate(-50%,-50%);
+         transform: translate(-50%,-50%);
         position: absolute;
 
       }
@@ -107,6 +107,15 @@ html {
         top:30%;
         transform: translate(-50%,-50%);
         position: absolute;
-        color: #ff3482;
+        color: #fff;
+        padding: 3px;
+        /* From https://css.glass */
+       /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.31);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(0.1px);
+      -webkit-backdrop-filter: blur(0.1px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       }
   }
